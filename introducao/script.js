@@ -191,13 +191,92 @@ let corPerfil = corPersonalizada || corPadrao;
 let hora = 22;
 
 if (hora > 6 && hora < 12){
-    console.log("Bom dia!");
+    //  console.log("Bom dia!");
 }
 
 else if (hora > 12 && hora < 18){
-    console.log("Boa tarde!")
+    //  console.log("Boa tarde!")
 }
 
 else{
-    console.log("Boa noite!")
+    //  console.log("Boa noite!")
+}
+
+
+ //SWITCH CASE
+let permissao; //comum, gerente, diretor
+permissao = 'gerente'
+
+switch(permissao){
+    case 'comum':
+    // console.log('usuario comum');
+    break;
+
+    case 'gerente':
+    // console.log('ususario gerente');
+    break;
+
+    case 'diretor':
+    //  console.log('usuario diretor');
+    break;
+
+
+    default:
+    // console.log('usuario nao reconhecido')
+}
+
+
+//LAÇO/LOOOR FOR
+//1.FOR
+//2.WHILE
+//3.DO..WHILE
+//4.FOR.IN
+//5.FOR..OF
+
+//FOR
+for( let i = 5;i >= 1; i-- ){
+    if(i % 2 !== 0){
+        // console.log(i);
+    }
+}
+
+
+
+// while loop
+
+let i = 5;
+
+while(i >= 1){
+    if(i % 2 !== 0){
+    //    console.log(i);
+    }
+    i--;
+}
+
+//DO..WHILE
+do {
+    // console.log('digitando', i);
+    i++;
+
+}while(i < 10)
+
+
+//FOR-IN
+const pessoaY = {
+    nomeX: 'Paulo',
+    idadeX: 18
+};
+
+for(let chave in pessoaY){
+    // console.log(chave,pessoaY['nomeX']);
+}
+
+
+
+
+//FOR-OF
+const cores = ['vermelho', 'azul', 'verde'];
+
+for(let cor of cores){
+    // console.log(cor);
 }
