@@ -292,7 +292,7 @@ const celular = {
     },
     capacidadeBateria: 5000,
     ligar : function(){
-        console.log("Fazendo Ligação...")
+        // console.log("Fazendo Ligação...")
     }
 }
 
@@ -302,10 +302,17 @@ function criarCelular (marcaCelular, tamanhoTela,capacidadeBateria){
         tamanhoTela,
         capacidadeBateria,
         ligar(){
-            console.log("Fazendo Ligação...")
+            // console.log("Fazendo Ligação...")
         }
     }
 }
 
 const celular1 = criarCelular('Zenfone', 5.5,5000);
-console.log(celular1)
+// console.log(celular1)
+
+
+// MATH
+
+
+
+// DATE
