@@ -28,7 +28,7 @@ let cor = null //redefinir um valor
 
 //OBJETOS
 
-let pessoa = { 
+let pessoa = {
     nome: 'Diego',
     idade2: 12,
     reprovado: false,
@@ -157,7 +157,7 @@ let candidatoRecusado = !aplicar;
 
 
 
-//COMPARACOES NAO BOLEANOS 
+//COMPARACOES NAO BOLEANOS
 
 //FALSY
 //undefined
@@ -316,3 +316,131 @@ const celular1 = criarCelular('Zenfone', 5.5,5000);
 
 
 // DATE
+
+
+
+
+//CONSTRUCTOR FUNCTION
+
+// Criar um objeto postagem
+// titulo,mensagem, autor, visualizacoes, comentarios, estaaovivo
+
+function Postagem(titulo,mensagem,autor){
+    this.titulo = titulo,
+    this.mensagem = mensagem,
+    this.autor = autor,
+    this.visualizacoes = 0,
+    this,comentarios = [],
+    this.estaAoVivo = false
+}
+
+let postagem = new Postagem('a','b','c');
+// console.log(postagem);
+
+
+
+// INTRODUÇÃO A ARRAYS
+// Add novos elementos
+// Encontrar Elementos
+// Remover Elementos
+// Dividir elementos
+// Dividir Arrays
+// Combinar Arrays
+
+
+
+// 1- ADCIONANDO ELEMENTOS
+const numeros = [1,2,3];
+
+//ADD NO INICIO
+numeros.unshift(0);
+// console.log(numeros);
+
+//ADD NO MEIO
+numeros.splice(1,0,'a');
+// console.log(numeros);
+
+//ADD NO FINAL
+numeros.push(5);
+// console.log(numeros);
+
+
+
+// 2- ENCONTRAR ELEMENTOS(PRIMITIVOS)
+
+const encontrarNumeros = [1,2,3,1,4];
+// console.log(encontrarNumeros.indexOf(3));
+// console.log(encontrarNumeros.lastIndexOf(1));
+
+// console.log( encontrarNumeros.indexOf(2) !== -1);
+
+// console.log(numeros.includes(2));
+
+
+
+// 3- ENCONTRAR ELEMENTOS(TIPOS DE REFERENCIA)
+const marcas = [
+    {id:1 , nome: 'a'},
+    {id:2 , nome: 'b'},
+];
+
+const marca = marcas.find(function(marca){
+    return marca.nome === 'a';
+});
+
+// console.log(marca);
+
+
+
+// 3- ARROW FUNCTIONS
+const marcas2 = [
+    {id:1, nome:'a'},
+    {id:2, nome:'b'},
+];
+
+// console.log(marcas.find((marca) => marca.nome === 'a'));
+
+
+
+
+// 4- REMOVER ELEMENTOS
+const removerNumeroa = [1,2,3,4,5,6];
+
+//remover no final
+const ultimo = removerNumeroa.pop();
+// console.log(ultimo);
+// console.log(removerNumeroa);
+
+//remover no inicio
+const primeiro = removerNumeroa.shift();
+// console.log(primeiro);
+// console.log(removerNumeroa);
+
+//remover no meio
+const meio = removerNumeroa.splice(2,1);
+// console.log(meio);
+// console.log(removerNumeroa);
+
+
+
+// 5- ESVAZIAR UM ARRAY
+let esvaziarNumeros = [1,2,3,4,5,6];
+let outros = esvaziarNumeros;
+
+esvaziarNumeros.length = 0;
+// console.log(esvaziarNumeros);
+// console.log(outros)
+
+
+
+// 6- COMBINANDO E CORTANDO ARRAYS
+const primeiro1 = [1,2,3];
+const segundo2 = [4,5,6];
+
+//COMBINAR
+const combinado = primeiro1.concat(segundo2);
+console.log(combinado);
+
+//DIVIDIR
+const cortado = combinado.slice();
+console.log(cortado);
