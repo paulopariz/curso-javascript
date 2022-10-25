@@ -435,12 +435,47 @@ esvaziarNumeros.length = 0;
 
 // 6- COMBINANDO E CORTANDO ARRAYS
 const primeiro1 = [1,2,3];
-const segundo2 = [4,5,6];
+const segundo1 = [4,5,6];
 
 //COMBINAR
-const combinado = primeiro1.concat(segundo2);
-console.log(combinado);
+const combinado = primeiro1.concat(segundo1);
+// console.log(combinado);
 
 //DIVIDIR
 const cortado = combinado.slice();
-console.log(cortado);
+// console.log(cortado);
+
+
+//7- OPERADOR SPREAD
+const primeiro2 = [1,2,3];
+const segundo2 = [4,5,6];
+
+//const combinado = primeiro.concat(segundo)
+const combinado1 = [...primeiro2,'a', ...segundo2,'#'];
+// console.log(combinado1);
+
+//const cortado = combinado.slice()
+const clonado = [...combinado1];
+// console.log(clonado);
+
+
+//8- Iterando um array
+const numeros3 = [1,2,3,4,5];
+
+//forEach
+// numeros3.forEach((numero,indice) => console.log(numero,indice))
+
+
+//9- combinando arrays
+const numeros4 = [1,2,3,4,5];
+
+const combinado2 = numeros4.join('.');
+// console.log(combinado2);
+
+const frase = "ola, seja muito bem vindo";
+const resultado1 = frase.split(' ');
+// console.log(resultado1);
+
+// console.log(resultado1.join('.'));
+
+
